@@ -7,6 +7,10 @@ class Product(models.Model):
     name = models.CharField(max_length=255)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     color = models.CharField(max_length=255, blank=True, null=True)
+    session = models.CharField(max_length=255, blank=True, null=True)
+    status = models.CharField(max_length=255, blank=True, null=True)
+    age = models.CharField(max_length=255, blank=True, null=True)
+
     # other fields...
 
     def __str__(self):
